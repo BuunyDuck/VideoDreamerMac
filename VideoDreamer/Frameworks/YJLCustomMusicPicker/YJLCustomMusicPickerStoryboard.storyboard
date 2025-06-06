@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Music Controller-->
+        <scene sceneID="7lW-1t-9Lz">
+            <objects>
+                <navigationController storyboardIdentifier="YJLCustomMusicController" id="EeA-Mi-fk8" customClass="YJLCustomMusicController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C7N-PH-DBL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UT5-eb-uMB" kind="relationship" relationship="rootViewController" id="AwL-3Q-oeR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPl-WU-9ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561" y="101"/>
+        </scene>
+        <!--Music Albums View Controller-->
+        <scene sceneID="1Tg-mZ-lsG">
+            <objects>
+                <viewController id="UT5-eb-uMB" customClass="YJLMusicAlbumsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nVr-Hn-ahc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-Hg-WiR">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="WN9-es-nkx"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Playlists" image="playlists" landscapeImage="playlists" id="tbD-ly-78c"/>
+                                    <tabBarItem tag="1" title="Artists" image="artists" landscapeImage="artists" id="AA2-kJ-5Av"/>
+                                    <tabBarItem tag="2" title="Songs" image="songs" landscapeImage="songs" id="VCB-1z-bWl"/>
+                                    <tabBarItem tag="3" title="Albums" image="albums" landscapeImage="albums" id="rQo-ED-Px2"/>
+                                    <tabBarItem tag="4" title="Genres" image="genres" landscapeImage="genres" id="H4s-ku-qeP"/>
+                                    <tabBarItem tag="5" title="Library" image="library" landscapeImage="library" id="aw7-RP-IlQ"/>
+                                </items>
+                                <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UT5-eb-uMB" id="uFx-vR-5WK"/>
+                                </connections>
+                            </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-gy-K5K">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OR2-N7-bUj"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OR2-N7-bUj" firstAttribute="bottom" secondItem="c1D-Hg-WiR" secondAttribute="bottom" id="1QX-bq-RDi"/>
+                            <constraint firstItem="OR2-N7-bUj" firstAttribute="trailing" secondItem="Fye-gy-K5K" secondAttribute="trailing" id="1o2-vy-IIB"/>
+                            <constraint firstItem="Fye-gy-K5K" firstAttribute="top" secondItem="OR2-N7-bUj" secondAttribute="top" id="Eb1-Ms-DaJ"/>
+                            <constraint firstItem="c1D-Hg-WiR" firstAttribute="top" secondItem="Fye-gy-K5K" secondAttribute="bottom" id="W30-SM-Jlz"/>
+                            <constraint firstItem="Fye-gy-K5K" firstAttribute="leading" secondItem="OR2-N7-bUj" secondAttribute="leading" id="kdU-hd-Td6"/>
+                            <constraint firstItem="c1D-Hg-WiR" firstAttribute="trailing" secondItem="nVr-Hn-ahc" secondAttribute="trailing" id="mgS-hf-A43"/>
+                            <constraint firstItem="c1D-Hg-WiR" firstAttribute="leading" secondItem="nVr-Hn-ahc" secondAttribute="leading" id="reB-ve-XMz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vb5-ZL-COI"/>
+                    <connections>
+                        <outlet property="albumsItem" destination="rQo-ED-Px2" id="nOf-wY-QsI"/>
+                        <outlet property="albumsTabbar" destination="c1D-Hg-WiR" id="2fv-8M-PCa"/>
+                        <outlet property="artistsItem" destination="AA2-kJ-5Av" id="2xw-oY-ayM"/>
+                        <outlet property="containersView" destination="Fye-gy-K5K" id="zun-mq-agY"/>
+                        <outlet property="genresItem" destination="H4s-ku-qeP" id="oxK-jr-dGh"/>
+                        <outlet property="libraryItem" destination="aw7-RP-IlQ" id="fdX-lu-wPM"/>
+                        <outlet property="playlistsItem" destination="tbD-ly-78c" id="I8p-Mw-XHL"/>
+                        <outlet property="songsItem" destination="VCB-1z-bWl" id="me7-j7-ome"/>
+                        <outlet property="tabbarHeightConstraint" destination="WN9-es-nkx" id="he8-2I-UTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ii8-yJ-bmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="94.902548725637189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="albums" width="30" height="30"/>
+        <image name="artists" width="30" height="30"/>
+        <image name="genres" width="30" height="30"/>
+        <image name="library" width="30" height="30"/>
+        <image name="playlists" width="30" height="30"/>
+        <image name="songs" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

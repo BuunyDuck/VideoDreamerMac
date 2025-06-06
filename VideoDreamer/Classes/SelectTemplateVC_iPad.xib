@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectTemplateVC">
+            <connections>
+                <outlet property="iPadPortraitCenterX" destination="zb0-b8-7Cl" id="u1p-fr-Pxm"/>
+                <outlet property="infoButton" destination="9Wk-06-875" id="fAO-nX-wvK"/>
+                <outlet property="infoLbl" destination="XgZ-SV-9dR" id="Y8J-DD-bxG"/>
+                <outlet property="outputLbl" destination="DQs-Wa-Qxy" id="CRL-vH-gKf"/>
+                <outlet property="playButton" destination="fYX-cq-nyf" id="xSn-2o-JFn"/>
+                <outlet property="playLabel" destination="Q6m-BL-ZvU" id="ido-MR-d9B"/>
+                <outlet property="projectView" destination="Gc1-YZ-4wB" id="vpT-RQ-2qn"/>
+                <outlet property="savedProjectLabel" destination="IDU-iw-1F0" id="IJs-ha-cEl"/>
+                <outlet property="settingLbl" destination="T4i-5A-MgC" id="vT5-7u-Ox8"/>
+                <outlet property="settingsButton" destination="RxX-C8-v5k" id="zlo-MG-Swy"/>
+                <outlet property="shareProjectButton" destination="72G-P3-Xvj" id="XAr-hH-Tff"/>
+                <outlet property="shareProjectLabel" destination="tnC-qI-0Hv" id="aNm-j3-9Z5"/>
+                <outlet property="tempInstagramButton" destination="Kna-sZ-a8x" id="unI-na-z5o"/>
+                <outlet property="tempLandscapeButton" destination="WXg-8A-REl" id="SyP-jf-4b4"/>
+                <outlet property="tempPortraitButton" destination="k8E-De-lWb" id="9qX-5Y-8W1"/>
+                <outlet property="templateLabel" destination="zNS-n3-oME" id="iF5-Uq-bRA"/>
+                <outlet property="termAndPrivacyButton" destination="OxB-ll-Ukp" id="Bek-rx-ab7"/>
+                <outlet property="versionLabel" destination="gzT-zQ-OIs" id="Tpn-ml-k8r"/>
+                <outlet property="view" destination="1" id="DON-IQ-rvd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXg-8A-REl" userLabel="Button - ipad land">
+                    <rect key="frame" x="28.5" y="207" width="250" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="keZ-BG-5Ok"/>
+                        <constraint firstAttribute="width" constant="250" id="x08-a7-R2A"/>
+                    </constraints>
+                    <state key="normal" image="template_iPad_landscape"/>
+                    <connections>
+                        <action selector="onDidSelectTemplate:" destination="-1" eventType="touchUpInside" id="Aqw-qK-jl1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8E-De-lWb" userLabel="Button - ipad port">
+                    <rect key="frame" x="294" y="169" width="180" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="0at-yz-R83"/>
+                        <constraint firstAttribute="width" constant="180" id="gmt-mM-RNU"/>
+                    </constraints>
+                    <state key="normal" image="template_iPad_portrait">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDidSelectTemplate:" destination="-1" eventType="touchUpInside" id="ciY-QQ-S9B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kna-sZ-a8x" userLabel="Button - instagram">
+                    <rect key="frame" x="489.5" y="207" width="250" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="UbI-AV-Alw"/>
+                        <constraint firstAttribute="height" constant="240" id="sfU-6p-Zfn"/>
+                    </constraints>
+                    <state key="normal" image="instagram">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onDidSelectTemplate:" destination="-1" eventType="touchUpInside" id="gND-n4-Slc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a New Template" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNS-n3-oME">
+                    <rect key="frame" x="184" y="454" width="400" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WpT-aJ-zDU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxX-C8-v5k" userLabel="Button - settings">
+                    <rect key="frame" x="76" y="575" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Tyx-D9-7As"/>
+                        <constraint firstAttribute="width" constant="40" id="wA0-mD-Y9v"/>
+                    </constraints>
+                    <state key="normal" image="gear">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSettings:" destination="-1" eventType="touchUpInside" id="qpp-Pb-LJn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OxB-ll-Ukp" userLabel="Button - terms">
+                    <rect key="frame" x="12" y="937" width="176" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="U95-rt-o7d"/>
+                        <constraint firstAttribute="height" constant="40" id="eev-gk-sgC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <state key="normal" title="Terms of Service &amp; Privacy Policy">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionTermsAndPrivacy:" destination="-1" eventType="touchUpInside" id="bIv-nn-hu1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4i-5A-MgC">
+                    <rect key="frame" x="46" y="618" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="dTK-Oh-0Rh"/>
+                        <constraint firstAttribute="height" constant="21" id="hmn-sq-uz7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-cq-nyf" userLabel="Button - Play Saved Video">
+                    <rect key="frame" x="359" y="569" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="fPL-sZ-MMJ"/>
+                        <constraint firstAttribute="height" constant="50" id="tU9-eG-LTV"/>
+                    </constraints>
+                    <state key="normal" image="PlaySavedVideo">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPlaySavedVideo:" destination="-1" eventType="touchUpInside" id="mQo-um-hL1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72G-P3-Xvj" userLabel="Button - Share a saved project">
+                    <rect key="frame" x="643" y="575" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="1ch-ft-J0v"/>
+                        <constraint firstAttribute="height" constant="40" id="2ln-8Y-dXh"/>
+                    </constraints>
+                    <state key="normal" image="share">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionShareSavedProject:" destination="-1" eventType="touchUpInside" id="lfl-4o-upo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-06-875" userLabel="Button - info">
+                    <rect key="frame" x="711" y="939" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="cop-iP-T1N"/>
+                        <constraint firstAttribute="height" constant="40" id="ig7-pA-M99"/>
+                    </constraints>
+                    <state key="normal" image="infoButton">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onInfo:" destination="-1" eventType="touchUpInside" id="QUb-XM-7Xh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play a Saved Video" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6m-BL-ZvU">
+                    <rect key="frame" x="138" y="629" width="492" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tZA-jd-ad5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-YZ-4wB" userLabel="View - project view">
+                    <rect key="frame" x="24" y="724" width="720" height="100"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2ni-U8-6nt"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a Saved Project" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-iw-1F0">
+                    <rect key="frame" x="168" y="834" width="432" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mPU-Ju-E4I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: Beta 0.112 (1.0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-zQ-OIs">
+                    <rect key="frame" x="12" y="984" width="746" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="aL6-6q-F8E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share a Saved Project" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnC-qI-0Hv">
+                    <rect key="frame" x="588" y="618" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bn4-kQ-hIh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="hdX-uo-10n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jve-6B-rCi">
+                    <rect key="frame" x="46" y="641" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="gLM-2H-Stc"/>
+                        <constraint firstAttribute="height" constant="21" id="wOt-jx-A7F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv7-nT-BK4">
+                    <rect key="frame" x="46" y="657" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="eyf-Pc-8QF"/>
+                        <constraint firstAttribute="height" constant="21" id="pOU-vY-SfH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HD OUTPUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQs-Wa-Qxy">
+                    <rect key="frame" x="46" y="673" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="23w-H2-tnT"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ouN-I6-PLv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgZ-SV-9dR">
+                    <rect key="frame" x="706" y="984" width="50" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="D4A-aV-xWC"/>
+                        <constraint firstAttribute="height" constant="24" id="zfl-bM-3Hl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ygl-Mb-cpf"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T4i-5A-MgC" firstAttribute="top" secondItem="RxX-C8-v5k" secondAttribute="bottom" constant="3" id="0px-cF-mS3"/>
+                <constraint firstItem="Gc1-YZ-4wB" firstAttribute="leading" secondItem="Ygl-Mb-cpf" secondAttribute="leading" constant="24" id="1pj-j7-ibC"/>
+                <constraint firstItem="zNS-n3-oME" firstAttribute="top" secondItem="WXg-8A-REl" secondAttribute="bottom" constant="7" id="4WK-vg-adQ"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zNS-n3-oME" secondAttribute="trailing" constant="184" id="4kG-4f-eBe"/>
+                <constraint firstItem="DQs-Wa-Qxy" firstAttribute="top" secondItem="rv7-nT-BK4" secondAttribute="bottom" constant="-5" id="4p4-PO-Rjf"/>
+                <constraint firstItem="fYX-cq-nyf" firstAttribute="top" secondItem="zNS-n3-oME" secondAttribute="bottom" constant="75" id="AP3-Pe-8rG"/>
+                <constraint firstItem="rv7-nT-BK4" firstAttribute="centerX" secondItem="Jve-6B-rCi" secondAttribute="centerX" id="D2x-Gq-6EX"/>
+                <constraint firstItem="Q6m-BL-ZvU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="1" secondAttribute="leading" constant="138" id="F2f-0E-TzT"/>
+                <constraint firstItem="Jve-6B-rCi" firstAttribute="centerX" secondItem="T4i-5A-MgC" secondAttribute="centerX" id="GCK-ny-tTK"/>
+                <constraint firstAttribute="trailing" secondItem="Q6m-BL-ZvU" secondAttribute="trailing" constant="138" id="JPv-I3-iWq"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IDU-iw-1F0" secondAttribute="trailing" constant="168" id="Jby-fE-dDw"/>
+                <constraint firstItem="9Wk-06-875" firstAttribute="centerX" secondItem="XgZ-SV-9dR" secondAttribute="centerX" id="Jm2-Kb-jXK"/>
+                <constraint firstAttribute="centerY" secondItem="fYX-cq-nyf" secondAttribute="top" multiplier="0.9" id="JrV-Ys-CDc"/>
+                <constraint firstAttribute="trailing" secondItem="gzT-zQ-OIs" secondAttribute="trailing" constant="10" id="Lac-xS-XP3"/>
+                <constraint firstItem="fYX-cq-nyf" firstAttribute="centerX" secondItem="Q6m-BL-ZvU" secondAttribute="centerX" id="Leo-pz-0O2"/>
+                <constraint firstItem="T4i-5A-MgC" firstAttribute="centerX" secondItem="RxX-C8-v5k" secondAttribute="centerX" id="M4h-Qe-MX7"/>
+                <constraint firstItem="Gc1-YZ-4wB" firstAttribute="top" secondItem="Q6m-BL-ZvU" secondAttribute="bottom" constant="55" id="MCU-uV-qdC"/>
+                <constraint firstItem="OxB-ll-Ukp" firstAttribute="leading" secondItem="Ygl-Mb-cpf" secondAttribute="leading" constant="12" id="MwN-TV-NYc"/>
+                <constraint firstItem="XgZ-SV-9dR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="P1l-H0-KV3"/>
+                <constraint firstAttribute="trailing" secondItem="72G-P3-Xvj" secondAttribute="trailing" constant="85" id="QPO-xe-dLD"/>
+                <constraint firstItem="zNS-n3-oME" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="184" id="SDu-zH-diD"/>
+                <constraint firstItem="RxX-C8-v5k" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="76" id="SIS-AC-Glj"/>
+                <constraint firstItem="gzT-zQ-OIs" firstAttribute="leading" secondItem="Ygl-Mb-cpf" secondAttribute="leading" constant="12" id="UX7-BG-YLw"/>
+                <constraint firstItem="IDU-iw-1F0" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="VrU-PZ-Ihb"/>
+                <constraint firstItem="WXg-8A-REl" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" multiplier="0.4:1" id="X2z-9Q-w9z"/>
+                <constraint firstAttribute="trailing" secondItem="XgZ-SV-9dR" secondAttribute="trailing" constant="12" id="XcW-UB-Agj"/>
+                <constraint firstItem="DQs-Wa-Qxy" firstAttribute="centerX" secondItem="rv7-nT-BK4" secondAttribute="centerX" id="Xl6-z6-JXe"/>
+                <constraint firstItem="Jve-6B-rCi" firstAttribute="top" secondItem="T4i-5A-MgC" secondAttribute="bottom" constant="2" id="ahw-nX-5es"/>
+                <constraint firstItem="Ygl-Mb-cpf" firstAttribute="trailing" secondItem="Gc1-YZ-4wB" secondAttribute="trailing" constant="24" id="amE-Wj-UMC"/>
+                <constraint firstItem="tnC-qI-0Hv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="bOd-56-wJz"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OxB-ll-Ukp" secondAttribute="trailing" constant="580" id="ety-W2-jQq"/>
+                <constraint firstItem="Ygl-Mb-cpf" firstAttribute="bottom" secondItem="gzT-zQ-OIs" secondAttribute="bottom" constant="16" id="evN-MB-5Os"/>
+                <constraint firstItem="IDU-iw-1F0" firstAttribute="top" secondItem="Gc1-YZ-4wB" secondAttribute="bottom" constant="10" id="flN-AG-w69"/>
+                <constraint firstAttribute="trailing" secondItem="Kna-sZ-a8x" secondAttribute="centerX" multiplier="1:0.8" id="h07-Tk-UUk"/>
+                <constraint firstItem="rv7-nT-BK4" firstAttribute="top" secondItem="Jve-6B-rCi" secondAttribute="bottom" constant="-5" id="k8k-Jo-jCy"/>
+                <constraint firstAttribute="bottom" secondItem="OxB-ll-Ukp" secondAttribute="bottom" constant="47" id="kb1-Kl-zbF"/>
+                <constraint firstItem="zNS-n3-oME" firstAttribute="top" secondItem="Kna-sZ-a8x" secondAttribute="bottom" constant="7" id="mAo-LX-IFi"/>
+                <constraint firstItem="IDU-iw-1F0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="1" secondAttribute="leading" constant="250" id="nKL-o3-dWz"/>
+                <constraint firstAttribute="trailing" secondItem="tnC-qI-0Hv" secondAttribute="trailing" constant="30" id="rOE-kH-pyL"/>
+                <constraint firstItem="XgZ-SV-9dR" firstAttribute="top" secondItem="9Wk-06-875" secondAttribute="bottom" constant="5" id="sjj-JC-eOt"/>
+                <constraint firstItem="Q6m-BL-ZvU" firstAttribute="top" secondItem="fYX-cq-nyf" secondAttribute="bottom" constant="10" id="syN-HU-VWo"/>
+                <constraint firstAttribute="bottom" secondItem="XgZ-SV-9dR" secondAttribute="bottom" constant="16" id="tOy-VF-0k7"/>
+                <constraint firstItem="tnC-qI-0Hv" firstAttribute="top" secondItem="72G-P3-Xvj" secondAttribute="bottom" constant="3" id="up0-NQ-Zh9"/>
+                <constraint firstItem="Gc1-YZ-4wB" firstAttribute="top" secondItem="72G-P3-Xvj" secondAttribute="bottom" constant="109" id="yHD-5Q-4W0"/>
+                <constraint firstItem="fYX-cq-nyf" firstAttribute="top" secondItem="k8E-De-lWb" secondAttribute="bottom" constant="50" id="z6F-Mn-xGA"/>
+                <constraint firstItem="k8E-De-lWb" firstAttribute="centerX" secondItem="zNS-n3-oME" secondAttribute="centerX" id="zb0-b8-7Cl"/>
+                <constraint firstItem="Gc1-YZ-4wB" firstAttribute="top" secondItem="RxX-C8-v5k" secondAttribute="bottom" constant="109" id="zpn-bk-f3a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="132" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PlaySavedVideo" width="50" height="50"/>
+        <image name="gear" width="128" height="128"/>
+        <image name="infoButton" width="100" height="100"/>
+        <image name="instagram" width="184" height="234"/>
+        <image name="share" width="397" height="393"/>
+        <image name="template_iPad_landscape" width="282" height="268"/>
+        <image name="template_iPad_portrait" width="193" height="397"/>
+    </resources>
+</document>

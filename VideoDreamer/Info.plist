@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>GIF image</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.compuserve.gif</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Open shared project</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>org.gnu.gnu-zip-archive</string>
+			</array>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.archive</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>VideoDreamer Project File</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.gnu.gnu-zip-archive</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Open shared project</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.zip-archive</string>
+			</array>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.pkware.zip-archive</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>VideoDreamer Project File</string>
+			<key>UTTypeIdentifier</key>
+			<string>public.zip-archive</string>
+		</dict>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb292080721213735</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>292080721213735</string>
+	<key>FacebookDisplayName</key>
+	<string>Video Dreamer</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>google.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_http._tcp</string>
+		<string>_http._udp</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Dakota Regular.ttf</string>
+		<string>AGOpus Bold.ttf</string>
+		<string>Coopbln.ttf</string>
+		<string>Franchise_Bold.ttf</string>
+		<string>MAFT.ttf</string>
+		<string>Stencil.ttf</string>
+		<string>Typewriter-Medium.otf</string>
+		<string>MYRIADPRO-BOLD.OTF</string>
+		<string>MYRIADPRO-BOLDIT.OTF</string>
+		<string>MYRIADPRO-REGULAR.OTF</string>
+		<string>MYRIADPRO-SEMIBOLD.OTF</string>
+		<string>MYRIADPRO-SEMIBOLDIT.OTF</string>
+		<string>bloofs.ttf</string>
+		<string>anirb.ttf</string>
+		<string>anirm.ttf</string>
+		<string>Casper.ttf</string>
+		<string>CreatorCreditsBB_ital.otf</string>
+		<string>CreatorCreditsBB_ital.ttf</string>
+		<string>CreatorCreditsBB.otf</string>
+		<string>CreatorCreditsBB.ttf</string>
+		<string>Crom_v1.ttf</string>
+		<string>csnpwdt NFI.otf</string>
+		<string>Deanna.ttf</string>
+		<string>elvish ring nfi.otf</string>
+		<string>elvish ring nfi.ttf</string>
+		<string>Friday13.otf</string>
+		<string>Friday13.ttf</string>
+		<string>Friday13SH.otf</string>
+		<string>Friday13SH.ttf</string>
+		<string>HellraiserBloody.otf</string>
+		<string>HOMOARAK.TTF</string>
+		<string>Mobsters.ttf</string>
+		<string>njnaruto.ttf</string>
+		<string>ParryHotter.ttf</string>
+		<string>PARSELTO.TTF</string>
+		<string>PORKYS.TTF</string>
+		<string>PORKH.TTF</string>
+		<string>RINGM.TTF</string>
+		<string>Scream Real.otf</string>
+		<string>Scream Real.ttf</string>
+		<string>Sematary.ttf</string>
+		<string>terminator real nfi.ttf</string>
+		<string>terminator real nfi.otf</string>
+		<string>TheGodfather-v2.ttf</string>
+		<string>Tr2n.ttf</string>
+		<string>underworld.ttf</string>
+		<string>WillyWonka.ttf</string>
+		<string>zreaks nfi.ttf</string>
+		<string>zreaks nfi.otf</string>
+		<string>ACFilmstrip.otf</string>
+		<string>ANGEL.ttf</string>
+		<string>BubbleMan.ttf</string>
+		<string>CANDY.ttf</string>
+		<string>DoubleFeature20.ttf</string>
+		<string>Grinched.ttf</string>
+		<string>Hellbound.otf</string>
+		<string>Hellraiser 3.otf</string>
+		<string>Hellraiser3 Shadow.otf</string>
+		<string>Highguard  New.ttf</string>
+		<string>KR Action!.ttf</string>
+		<string>KR Movie Time.ttf</string>
+		<string>KR Popcorn Time!.ttf</string>
+		<string>MetalMacabre.ttf</string>
+		<string>Movie Filmstrip.ttf</string>
+		<string>PublicEnemyNF.otf</string>
+		<string>PublicEnemyNF.ttf</string>
+		<string>SaucerBB.ttf</string>
+		<string>Shutdown!.ttf</string>
+		<string>sucker_font_2013_Juan_Casco.ttf</string>
+		<string>Tonight.ttf</string>
+		<string>TrashCinemaBB_ital.ttf</string>
+		<string>TrashCinemaBB.ttf</string>
+		<string>waltograph42.otf</string>
+		<string>waltograph42.ttf</string>
+		<string>waltographUI.ttf</string>
+		<string>WARGAMES.TTF</string>
+		<string>Showtime.ttf</string>
+		<string>GrandHotel-Regular.ttf</string>
+		<string>28 Days Later.ttf</string>
+		<string>Alice_in_Wonderland.ttf</string>
+		<string>AliciaWonderland.ttf</string>
+		<string>AMCAP Eternal.otf</string>
+		<string>AMCAP Eternal.ttf</string>
+		<string>American Captain Patrius 02 FRE.otf</string>
+		<string>American Captain Patrius 02 FRE.ttf</string>
+		<string>American Captain.otf</string>
+		<string>American Captain.ttf</string>
+		<string>Animales Fantastic.otf</string>
+		<string>Aspire-DemiBold.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER AT.otf</string>
+		<string>AVENGEANCE HEROIC AVENGER AT.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER BD.otf</string>
+		<string>AVENGEANCE HEROIC AVENGER BD.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER BI.otf</string>
+		<string>AVENGEANCE HEROIC AVENGER BI.ttf</string>
+		<string>AVENGEANCE HEROIC AVENGER.otf</string>
+		<string>AVENGEANCE HEROIC AVENGER.ttf</string>
+		<string>AVENGEANCE MIGHTIEST AVENGER.otf</string>
+		<string>AVENGEANCE MIGHTIEST AVENGER.ttf</string>
+		<string>AVENGEANCE.otf</string>
+		<string>AVENGEANCE.ttf</string>
+		<string>CANDY.otf</string>
+		<string>College Block.otf</string>
+		<string>Deadpool Movie.otf</string>
+		<string>Death Star.otf</string>
+		<string>Deathe Maach NCV.otf</string>
+		<string>Deathe Maach NCV.ttf</string>
+		<string>Descendants.otf</string>
+		<string>Diamond Dust - PERSONAL USE ONLY.ttf</string>
+		<string>Findet Nemo.ttf</string>
+		<string>Forque.ttf</string>
+		<string>HARRP.TTF</string>
+		<string>INKITMT.otf</string>
+		<string>IRON MAN OF WAR 001A NCV.ttf</string>
+		<string>IRON MAN OF WAR 001B NCV.ttf</string>
+		<string>IRON MAN OF WAR 001C NCV.ttf</string>
+		<string>IRON MAN OF WAR 002 NCV.ttf</string>
+		<string>Justice League.otf</string>
+		<string>JUSTICE LEAGUE.ttf</string>
+		<string>krunch_bold.ttf</string>
+		<string>krunch_italic.ttf</string>
+		<string>LMS Beyond Infinity.ttf</string>
+		<string>Molluca free.otf</string>
+		<string>Molluca free.ttf</string>
+		<string>Molluca italic free.otf</string>
+		<string>Molluca italic free.ttf</string>
+		<string>Monument_Valley_1.2-Regular.otf</string>
+		<string>MotionPicture_PersonalUseOnly.ttf</string>
+		<string>Nightmare Before Christmas.ttf</string>
+		<string>Ninjago.otf</string>
+		<string>NinjaStrike.otf</string>
+		<string>Pasajero.otf</string>
+		<string>Passager.ttf</string>
+		<string>PrincesS AND THE FROG.ttf</string>
+		<string>RINGM.TTF</string>
+		<string>Star_Jedi_Rounded.ttf</string>
+		<string>Starjedi.ttf</string>
+		<string>Starjhol.ttf</string>
+		<string>Suicide Squad Font.ttf</string>
+		<string>Tangled.ttf</string>
+		<string>The Amazing Spider-Man.ttf</string>
+		<string>TheGodfather.ttf</string>
+		<string>Tiki Tropic Bold.ttf</string>
+		<string>Tiki Tropic Outline.ttf</string>
+		<string>Tiki Tropic.ttf</string>
+		<string>Toxia_FRE.ttf</string>
+		<string>True Lies.otf</string>
+		<string>Upon A Dream (Maleficent).ttf</string>
+		<string>WALTER.TTF</string>
+		<string>Wonderbar Demo.otf</string>
+		<string>Zootopia JPosters.com.ar.otf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Access to your music is required so you can add audio to Video Dreamer creations.</string>
+</dict>
+</plist>

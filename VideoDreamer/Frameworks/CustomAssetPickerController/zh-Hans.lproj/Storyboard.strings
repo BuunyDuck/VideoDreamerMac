@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "50MB"; ObjectID = "AK4-aV-rAJ"; */
+"AK4-aV-rAJ.text" = "50MB";
+
+/* Class = "UILabel"; text = "1024x768"; ObjectID = "LSK-A5-VbA"; */
+"LSK-A5-VbA.text" = "1024x768";
+
+/* Class = "UINavigationItem"; title = "Albums"; ObjectID = "PHG-DW-u7x"; */
+"PHG-DW-u7x.title" = "相簿";
+
+/* Class = "UILabel"; text = "video"; ObjectID = "Sjw-XN-u6P"; */
+"Sjw-XN-u6P.text" = "视频";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "hZI-QD-U3o"; */
+"hZI-QD-U3o.text" = "详情";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "k25-qG-Tz2"; */
+"k25-qG-Tz2.title" = "选择";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qKL-Ei-Rh6"; */
+"qKL-Ei-Rh6.text" = "标题";
